@@ -87,3 +87,18 @@ body {
         transform: translateY(-100%);
     }
 }
+
+@media screen and (max-width: 480px) {
+    #content .lyrics-container{
+        width: 90%;
+        height: auto;
+    }
+    
+    #content {
+        margin: 8px 0;
+    }
+
+    html {
+        background-color: var(--content-color);
+    }
+}
