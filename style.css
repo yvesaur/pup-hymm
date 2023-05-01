@@ -1,0 +1,89 @@
+:root{
+    --main-color: #800000;
+    --text-color: #F2F2F2;
+    --text-color1: #0D0D0D;
+    --content-color: #F2CB05;
+    --content-color1: #D99923;
+}
+
+html, body {
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#header, #footer {
+    flex-basis: 6%;
+    background-color: var(--main-color);
+    flex: 0 1 auto;
+}
+
+#header {
+    flex-basis: 8%;
+    display: flex;
+    font-family: 'Programme', sans-serif;
+    color: var(--text-color);
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+#header img {
+    height: 56px;
+    width: 56px;
+}
+
+#footer {
+    color: var(--text-color);
+    font-family: "Programme", sans-serif;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+
+#content {
+    flex: 1 1 auto;
+    width: 100%;
+    background-color: var(--content-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+#content .lyrics-container {
+    width: 40%;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 8px;
+    border-radius: 20px;
+    white-space: pre-line;
+    font-size: 1.4rem;
+    font-family: 'Programme', sans-serif;
+
+    height: 80%;
+    border: 1px solid var(--text-color1);
+    text-align: center;
+}
+
+
+@keyframes marquee {
+    0% {
+        transform: translateY(115%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
